@@ -44,7 +44,7 @@ function destroy(id) {
                             </thead>
                             <tbody class="bg-white divide-y divide-gray-200">
                             <!-- Baris 1 -->
-                            <tr v-for="post in posts" :key="post" >
+                            <tr v-for="post in posts" :key="post.posts" >
                                 <td class="px-6 py-4 whitespace-nowrap">{{ post.id }}</td>
                                 <td class="px-6 py-4 whitespace-nowrap">{{ post.judul }}</td>
                                 <td class="px-6 py-4 whitespace-nowrap">{{ post.kategori }}</td>
