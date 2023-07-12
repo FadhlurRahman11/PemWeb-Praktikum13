@@ -158,7 +158,7 @@ _sfc_main$1.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/ResponsiveNavLink.vue");
   return _sfc_setup$1 ? _sfc_setup$1(props, ctx) : void 0;
 };
-const _sfc_main = /* @__PURE__ */ defineComponent({
+const _sfc_main = {
   __name: "AuthenticatedLayout",
   __ssrInlineRender: true,
   setup(__props) {
@@ -190,6 +190,21 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
           } else {
             return [
               createTextVNode(" Dashboard ")
+            ];
+          }
+        }),
+        _: 1
+      }, _parent));
+      _push(ssrRenderComponent(_sfc_main$2, {
+        href: _ctx.route("posts.index"),
+        active: _ctx.route().current("posts.index")
+      }, {
+        default: withCtx((_, _push2, _parent2, _scopeId) => {
+          if (_push2) {
+            _push2(` Posts `);
+          } else {
+            return [
+              createTextVNode(" Posts ")
             ];
           }
         }),
@@ -351,13 +366,14 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       _push(`</main></div></div>`);
     };
   }
-});
+};
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Layouts/AuthenticatedLayout.vue");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
+const AuthenticatedLayout = _sfc_main;
 export {
-  _sfc_main as _
+  AuthenticatedLayout as A
 };

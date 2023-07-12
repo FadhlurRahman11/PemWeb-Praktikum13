@@ -1,9 +1,9 @@
 import { defineComponent, unref, withCtx, createVNode, useSSRContext } from "vue";
 import { ssrRenderComponent } from "vue/server-renderer";
-import { _ as _sfc_main$1 } from "./AuthenticatedLayout-779ddcb7.js";
-import _sfc_main$4 from "./DeleteUserForm-7adf73a5.js";
-import _sfc_main$3 from "./UpdatePasswordForm-4952f936.js";
-import _sfc_main$2 from "./UpdateProfileInformationForm-c8bc361a.js";
+import { A as AuthenticatedLayout } from "./AuthenticatedLayout-34aa3109.js";
+import _sfc_main$3 from "./DeleteUserForm-7adf73a5.js";
+import _sfc_main$2 from "./UpdatePasswordForm-4952f936.js";
+import _sfc_main$1 from "./UpdateProfileInformationForm-c8bc361a.js";
 import { Head } from "@inertiajs/vue3";
 import "./ApplicationLogo-a13ec695.js";
 import "./_plugin-vue_export-helper-cc2b3d55.js";
@@ -20,7 +20,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<!--[-->`);
       _push(ssrRenderComponent(unref(Head), { title: "Profile" }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$1, null, {
+      _push(ssrRenderComponent(AuthenticatedLayout, null, {
         header: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<h2 class="font-semibold text-xl text-gray-800 leading-tight"${_scopeId}>Profile</h2>`);
@@ -33,32 +33,32 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<div class="py-12"${_scopeId}><div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6"${_scopeId}><div class="p-4 sm:p-8 bg-white shadow sm:rounded-lg"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$2, {
+            _push2(ssrRenderComponent(_sfc_main$1, {
               "must-verify-email": _ctx.mustVerifyEmail,
               status: _ctx.status,
               class: "max-w-xl"
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="p-4 sm:p-8 bg-white shadow sm:rounded-lg"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$3, { class: "max-w-xl" }, null, _parent2, _scopeId));
+            _push2(ssrRenderComponent(_sfc_main$2, { class: "max-w-xl" }, null, _parent2, _scopeId));
             _push2(`</div><div class="p-4 sm:p-8 bg-white shadow sm:rounded-lg"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$4, { class: "max-w-xl" }, null, _parent2, _scopeId));
+            _push2(ssrRenderComponent(_sfc_main$3, { class: "max-w-xl" }, null, _parent2, _scopeId));
             _push2(`</div></div></div>`);
           } else {
             return [
               createVNode("div", { class: "py-12" }, [
                 createVNode("div", { class: "max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6" }, [
                   createVNode("div", { class: "p-4 sm:p-8 bg-white shadow sm:rounded-lg" }, [
-                    createVNode(_sfc_main$2, {
+                    createVNode(_sfc_main$1, {
                       "must-verify-email": _ctx.mustVerifyEmail,
                       status: _ctx.status,
                       class: "max-w-xl"
                     }, null, 8, ["must-verify-email", "status"])
                   ]),
                   createVNode("div", { class: "p-4 sm:p-8 bg-white shadow sm:rounded-lg" }, [
-                    createVNode(_sfc_main$3, { class: "max-w-xl" })
+                    createVNode(_sfc_main$2, { class: "max-w-xl" })
                   ]),
                   createVNode("div", { class: "p-4 sm:p-8 bg-white shadow sm:rounded-lg" }, [
-                    createVNode(_sfc_main$4, { class: "max-w-xl" })
+                    createVNode(_sfc_main$3, { class: "max-w-xl" })
                   ])
                 ])
               ])
